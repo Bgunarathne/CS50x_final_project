@@ -47,7 +47,7 @@ The idea is simple. The user can take a look at the vehicle gallery and some oth
 - Username
 - Password
 
-When a user get register he owns $10, 000 .
+When a user get register she/he owns $10, 000 .
 
 The registration allows you to access your dashboard, where you can see what you had been pre-ordering and some other details. Through the history tab, you can take a look at your ordering history.
 
