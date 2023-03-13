@@ -1,10 +1,10 @@
 # Vehicle Company Business Web Application
 
-####Video Demo: https://youtu.be/Rc7sm6PXM30
+#### Video Demo: https://youtu.be/Rc7sm6PXM30
 
-####Year: 2022
+#### Year: 2022
 
-####Description:
+#### Description:
 
 The project is a web app where users can choose a vehicle and pre-order the vehicle. I wanted to make a project like this to expand my knowledge of web design. I wanted to make this site very attractive and very user-friendly. Not only that, but I think I successes. I named the company "infinity" and I also designed a logo for the company. The application is fully responsive.
 
@@ -28,7 +28,7 @@ After you logged in, you can see a new history tab appears. What it does is it d
 
 So there are 11 templates, including apalogy.html.(Which is called When the user inputs something inappropriate. )
 
-#####Technologies used:
+##### Technologies used:
 
 - HTML
 - CSS
@@ -39,7 +39,7 @@ So there are 11 templates, including apalogy.html.(Which is called When the user
 - Other small libraries or packages
 
 
-#####How does the webpage work?
+##### How does the webpage work?
 
 The idea is simple. The user can take a look at the vehicle gallery and some other company-related things, but if they want to pre-order a vehicle, they have to get registered on the website. During registration, you need to enter these fields:
 
@@ -53,20 +53,20 @@ The registration allows you to access your dashboard, where you can see what you
 
 To pre-order, you have to fill the form in the order-now tab and when you submit the form charges will be applied and your account balance will reduce according to it. Normally, pre-ordering process cost $2, 000.
 
-#####Validation
+##### Validation
 
 All the registration and login data will be validated through the backend and frontend.
 
 
 
-#####Database
+##### Database
 
 The database stores all user's data inside two tables. Registration and login data will be stored in users table and all the buying details are stored in the transaction table.
 
-#####Possible Improvements
+##### Possible Improvements
 
 Have an administrator account which confirms user identity, so that fake accounts could not register.
 
-#####How to run the app?
+##### How to run the app?
 
 - You can type `flask run` in the terminal and the app will be executed.
