@@ -1,0 +1,19 @@
+.head1 {
+  font-size: 60px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.2);
+  padding-left: 30px;
+  /* text-align: center; */
+}
+
+.navtitle {
+  padding-bottom: 200px;
+}
+.txtcenter{
+  text-align: center;
+}
+
+.fontstyle{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}

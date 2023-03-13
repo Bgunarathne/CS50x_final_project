@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="../static/CSS/logs.css">
+{% endblock %}
+
+{% block title %}
+Profile
+{% endblock %}
+
+{% block main %}
+<div class="navigation" style="  background-image: url('../static/67.jpg')">
+  <div class="logtitle">
+  <h1 class="head1">Looking for Your Past Deals !!</h1>
+</div>
+</div>
+<h1 class="pothead">History</h1>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Car Model</th>
+        <th scope="col">Status</th>
+        <th scope="col">PCs</th>
+        <th scope="col">Price</th>
+        <th scope="col">Date & time</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      {% for i in user_details %}
+      <tr class="tableRow">
+        <td>{{ i["symbol"] }}</td>
+        <td class="status"></td>
+        <td class="shares">{{ i["shares"] }}</td>
+        <td>{{ i["price"] }}</td>
+        <td>{{ i["date"] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+
+  </table>
+</div>
+<script>
+  var shares = document.querySelectorAll(".shares");
+  var row = document.querySelectorAll(".tableRow");
+
+  for (var i = 0; i < shares.length; ++i) {
+    var buy_sold = document.querySelectorAll(".status");
+
+    buy_sold[i].innerHTML = "Buy";
+    if ((parseInt(shares[i].innerHTML)) < 0) {
+
+
+      buy_sold[i].innerHTML = "Sold"
+      row[i].classList.add("table-danger")
+    }
+  }
+</script>
+{% endblock %}

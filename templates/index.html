@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+
+
+{% block css %}
+  <link rel="stylesheet" href="/static/CSS/indexStyles.css">
+ {% endblock %}
+{% block title %}Infinity{% endblock %}
+
+{% block main %}
+
+<!-- hero title -->
+<div class=" navigation jumbotron" style="  background-image: url('../static/85.jpg')">
+  <div class="navtitle mobilewidth">
+  <h1>Discover Your Dream <span class="mov"><span></span></span></h1>
+  <p class="hidepara">
+click below to take a look at Our best-selling items...
+  </p>
+    <a href="vehicales.html"><input type="submit" value="Click Here" class="btn btn-dark button"></a>
+</div>
+</div>
+
+<div class="container-fluid" style="background-color:#082032; color:white; padding:2rem">
+  <div class="row pad-box">
+    <div class="col-12 service">
+      <h1>About Us</h1>
+    </div>
+    <div class="col-md-6" style="text-align:center">
+      <h5 class="service"><em>Best Car Seller Since 1998</em></h5>
+      <div data-aos="fade-right" data-aos-duration="2000">
+      <img src="/static/5.png" alt="profile" width="150px" height="auto">
+      </div>
+    </div>
+
+    <div class="col-md-6" style="margin-top:70px">
+      <p>
+        Since 1983 we sell all types of cars in Sri Lanka. We own the biggest car selling networks in the world. We are the leading
+        car company in the country.
+        To know more about us, click below. <br>
+      </p>
+      <a href="templates/aboutUs.html"><input type="submit" value="READ MORE" class="btn btn-primary"></a>
+    </div>
+
+
+  </div>
+</div>
+<div class="container-fluid" style="background-color: rgb(252,186,36);">
+  <div class="row pad-box">
+    <p class="col-md-6" style="margin-top:100px">
+
+      Since 1983 we have kept our reputatuion above all. Because of that we were able to get sponsorship from world-famous companies.So you want to buy your dream car from world-class seller. <br>
+      <a href="templates/orderNow.html"><input type="submit" value="ORDER NOW" class="btn btn-dark"></a>
+    </p>
+    <div class="col-md-6" align="center">
+      <video height="auto" width="300px" loop="true" autoplay="autoplay" id="vid" muted>
+            <source type="video/mp4" src="static/Gfycat video downloader keepsaveit.mp4">
+      </video>
+    </div>
+
+  </div>
+</div>
+<!-- sposors -->
+<div style="background-color:#334756; color:white">
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+
+    <div class="carousel-item active" >
+        <h3 class="comment">"Best shop according to my experience. Highly recomonded for everyone."</h3>
+      <img src="static/person (2).jpg"  alt="..."  class="testi-img">
+      <p>-Beverly Hills-</p>
+    </div>
+
+    <div class="carousel-item">
+        <h3 class="comment">"I bought my first vehicle from infinity. The service was awesome."</h3>
+      <img src="static/person (1).jpg"  alt="..."  class="testi-img">
+        <p>-Emma Watson-</p>
+    </div>
+    <div class="carousel-item">
+        <h3 class="comment">"I have been dealed with many vehicles and shops. This Was different and awesome."</h3>
+      <img src="static/person (3).jpg"  alt="..."  class="testi-img">
+        <p>-Caver Edland-</p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row pad-box " style="background-color: #6D9886; color:white">
+    <h1 class="service">Our Services ...</h1>
+
+    <div class="service imagepad col-6 col-md-3"> <img src="static/24.png" alt="" width="150px"></div>
+    <div class="service imagepad col-6 col-md-3"> <img src="static/time.png" alt="" width="150px"></div>
+    <div class="service imagepad col-6 col-md-3"><img src="static/fs.png" alt="" width="150px"></div>
+    <div class="service imagepad col-6 col-md-3"> <img src="static/24hr.png" alt="" width="150px"></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  let typed = new Typed(".mov",{
+      strings: [,  " Car..."," SUV...", " Jeep..."] ,
+      typeSpeed: 100,
+      backSpeed: 30,
+      loop: true
+
+      })
+
+</script>
+
+{% endblock %}

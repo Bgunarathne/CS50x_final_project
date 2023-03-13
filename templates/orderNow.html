@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/CSS/orderNow.css">
+{% endblock %}
+{% block title %}Order!!{% endblock %}
+
+{% block main %}
+<div class="navigation" style="background-image:url('../static/15.jpg') ;">
+  <div class="navtitle">
+    <h1>Place Your Order, Now </h1>
+    <h5>Pre-order Vehicales and stand chance to win the mega deal !!</h5>
+  </div>
+</div>
+
+
+<div id="order" style="background-image: url('../static/20209.jpg');">
+  <div id="pre">
+    <h2 class="fontstyle">Want to Pre-Order ??</h2>
+    <h6 class="fontstyle">Submit the form</h6>
+  </div>
+
+  <div class="testbox">
+    <form action="/buy" method="post">
+      <div class="banner">
+        <h1 class="banner-title">Pre Order Now</h1>
+      </div>
+      <div class="item">
+        <p>Name</p>
+        <div class="name-item">
+          <input type="text" name="name" placeholder="First" required />
+          <input type="text" name="lname" placeholder="Last"  required/>
+        </div>
+      </div>
+      <div class="item">
+        <p>Email</p>
+        <input type="text" name="email"  required/>
+      </div>
+      <div class="item">
+        <p>Phone</p>
+        <input type="text" name="phone" required />
+      </div>
+      <div class="item">
+        <p>Contact Address</p>
+        <input type="text" name="adress" placeholder="Street address" />
+        <input type="text" name="adress" placeholder="Street address line 2" />
+        <div class="city-item">
+          <input type="text" name="adress" placeholder="City" required/>
+          <input type="text" name="adress" placeholder="Region" required/>
+          <input type="text" name="adress" placeholder="Postal / Zip code" required/>
+          <select>
+            <option value="">Country</option>
+            <option value="1">Russia</option>
+            <option value="2">Germany</option>
+            <option value="3">France</option>
+            <option value="4">Armenia</option>
+            <option value="5">USA</option>
+          </select>
+        </div>
+      </div>
+      <div class="item">
+        <p>Select a Car</p>
+        <select name="cars">
+          <option disabled selected>Available Cars</option>
+          {% for car in cars %}
+          <option value="{{ car }}">{{ car }}</option>
+          {% endfor %}
+        </select>
+
+      </div>
+
+      <div class="city-item">
+      <p><b>Do you agreed to pay $ 500 for the pre odering process</b></p>
+      <input type="checkbox" name="checked" value="checked" required>
+  </div>
+
+  <div class="item">
+    <p>Notes</p>
+    <textarea rows="3"></textarea>
+  </div>
+  <div class="btn-block">
+    <button type="submit" href="/">SEND</button>
+  </div>
+  </form>
+</div>
+{% endblock %}

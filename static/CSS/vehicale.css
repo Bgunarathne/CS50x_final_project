@@ -1,0 +1,29 @@
+
+a,h2,a > p {
+  text-decoration: none;
+  color: black;
+}
+
+.navtitle{
+    margin-top:10rem
+}
+
+.container{
+text-align:left
+}
+.navtitle{
+padding-top:25rem
+}
+
+a:hover, .card-title:hover,.card-text:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+.card-deck {
+  padding: 40px;
+}
+
+.ft {
+  font-size: 15px;
+}

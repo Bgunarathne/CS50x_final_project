@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="../static/CSS/logs.css">
+{% endblock %}
+
+{% block title %}
+Profile
+{% endblock %}
+
+{% block main %}
+<div class="navigation" style="  background-image: url('../static/67.jpg')">
+  <div class="logtitle">
+  <h1 class="head1">Welcome To Infinity !!</h1>
+</div>
+</div>
+<h1 class="pothead">Portfolio</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Car Model</th>
+      <th scope="col">PCs</th>
+      <th scope="col">Paid</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+    {% for row in details %}
+    <tr>
+      <td>{{ row["symbol"] }}</td>
+      <td>{{ row["shares"] }}</td>
+      <td>{{ row["price"] }}</td>
+      <td>{{ row["tot"] }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><b>Cash</b></td>
+      <td>{{ details[0]["cash"] }}</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><b>TOTAL</b></td>
+      <td><b>{{ details[0]["grand_tot"] }}</b></td>
+    </tr>
+  </tfoot>
+</table>
+
+{% endblock %}
