@@ -6,7 +6,7 @@
 
 #### Description:
 
-The project is a web app where users can choose a vehicle and pre-order the vehicle. I wanted to make a project like this to expand my knowledge of web design. I wanted to make this site very attractive and very user-friendly. Not only that, but I think I successes. I named the company "infinity" and I also designed a logo for the company. The application is fully responsive.
+The project is a web app where users can choose a vehicle and pre-order the vehicle. I wanted to make a project like this to expand my knowledge of web design. I wanted to make this site very attractive and very user-friendly. Not only that, but I think I got success. I named the company "infinity" and I also designed a logo for the company. The application is fully responsive.
 
 When you arrive at the homepage of this website, you can see a basic description of the company and what the web page does. In the middle of the page, there is a testimonial section that depicts user experience with the business. You can get a pretty good idea about the site and the company from the first page.
 
