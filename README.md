@@ -39,7 +39,7 @@ So there are 11 templates, including apalogy.html.(Which is called When the user
 - Other small libraries or packages
 
 
-### How does the webpage work?
+### How does the web application work?
 
 The idea is simple. The user can take a look at the vehicle gallery and some other company-related things, but if they want to pre-order a vehicle, they have to get registered on the website. During registration, you need to enter these fields:
 
