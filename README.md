@@ -35,7 +35,7 @@ So there are 11 templates, including apalogy.html.(Which is called When the user
 - JavaScript
 - Python
 - Flask
-- SQL
+- SQLite
 - Other small libraries or packages
 
 
