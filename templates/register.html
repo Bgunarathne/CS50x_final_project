@@ -1,53 +1,51 @@
-{% extends "layout.html" %}
-
-{% block css %}
-<link rel="stylesheet" href="../static/CSS/logs.css">
-<link rel="stylesheet" href="../static/CSS/register.css">
-{% endblock %}
-
-
-{% block title %}
-Register!!
-{% endblock %}
-
-{% block main %}
-<div class="navigation" style="  background-image: url('../static/67.jpg')">
-  <div class="logtitle">
-  <h1 class="head1">Register Now !!</h1>
+{% extends "layout.html" %} {% block css %}
+<link rel="stylesheet" href="../static/CSS/logs.css" />
+<link rel="stylesheet" href="../static/CSS/register.css" />
+{% endblock %} {% block title %} Register!! {% endblock %} {% block main %}
+<div class="navigation" style="background-image: url('../static/67.jpg')">
+	<div class="logtitle">
+		<h1 class="head1">Register Now !!</h1>
+	</div>
 </div>
-</div>
-  <div class="form-v2">
+<div class="form-v2">
 	<div class="page-content">
 		<div class="form-v2-content">
 			<div class="form-left">
-				<img src="static/60.jpg" alt="form">
+				<img src="static/60.jpg" alt="form" />
 				<div class="text-1">
 					<p>Best Cars<span>Best Company</span></p>
 				</div>
 				<div class="text-2">
 					<p><span>$2000</span> For one pre-order</p>
-          </div>
 				</div>
-			<form class="form-detail"action="/register" method="post" id="myform">
+			</div>
+			<form class="form-detail needs-validation" action="/register" method="post" id="myform" novalidate>
 				<h2>Registration Form</h2>
 				<div class="form-row">
 					<label for="full-name">Full Name:</label>
-					<input type="text" name="full_name" id="full_name" class="input-text" placeholder="ex: Lindsey Wilson" required>
+					<input type="text" name="full_name" id="full_name" class="input-text"
+						placeholder="ex: Lindsey Wilson" required />
+					<div class="invalid-feedback">Please provide a valid Input.</div>
 				</div>
 				<div class="form-row">
 					<label for="your_email">Your Email:</label>
-					<input type="text" name="your_email" id="your_email" class="input-text" required required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+					<input type="text" name="your_email" id="your_email" class="input-text" required
+						pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" />
+					<div class="invalid-feedback">Please provide a valid Input.</div>
 				</div>
 				<div class="form-row">
 					<label for="password">Password:</label>
-					<input type="password" required name="password" id="password" class="input-text" required>
+					<input type="password" required name="password" id="password" class="input-text" required />
+					<div class="invalid-feedback">Please provide a valid Input.</div>
 				</div>
 				<div class="form-row">
 					<label for="comfirm-password">Confirm Password:</label>
-					<input type="password" name="confirm_password" id="confirm_password" required class="input-text" required>
+					<input type="password" name="confirm_password" id="confirm_password" required class="input-text"
+						required />
+					<div class="invalid-feedback">Please provide a valid Input.</div>
 				</div>
 				<div class="form-row-last">
-					<input type="submit" name="register" class="register" value="Register">
+					<input type="submit" name="register" class="register" value="Register" />
 				</div>
 			</form>
 		</div>
@@ -55,6 +53,33 @@ Register!!
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-	
+
+	<script>
+		(function () {
+			"use strict";
+			window.addEventListener(
+				"load",
+				function () {
+					// Fetch all the forms we want to apply custom Bootstrap validation styles to
+					var forms = document.getElementsByClassName("needs-validation");
+					// Loop over them and prevent submission
+					var validation = Array.prototype.filter.call(forms, function (form) {
+						form.addEventListener(
+							"submit",
+							function (event) {
+								if (form.checkValidity() === false) {
+									event.preventDefault();
+									event.stopPropagation();
+								}
+								form.classList.add("was-validated");
+							},
+							false
+						);
+					});
+				},
+				false
+			);
+		})();
+	</script>
 </div>
 {% endblock %}
