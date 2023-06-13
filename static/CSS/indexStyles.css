@@ -54,24 +54,35 @@ h1 {
   color: white;
   padding: 7% 15%;
 }
+.navBack{
+  background-image: url('../85.jpg')
+}
 
 @media (max-width:992px) {
   .hidepara{
     display: none;
   }
   .mobilewidth{
-    margin-bottom:200px;
-    margin-top: 200px;
+margin-top: 2rem;
+margin-bottom: 18rem;
+font-weight: 100;
   }
   .carousel{
-    padding:5rem 0.2rem;
+    padding:4rem 0.2rem;
   }
   .service{
     font-size: 2rem;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
   }
   .navBack{
     overflow: hidden;
-    background-position: left;
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/474/338/desktop-wallpaper-bmw-black-car-black-car-thumbnail.jpg);
+
+  }
+  .service img{
+    width: 95px;
+  }
+  .mainBtn{
+    margin-top: 1.5rem;
   }
 }
