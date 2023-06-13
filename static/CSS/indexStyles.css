@@ -63,4 +63,15 @@ h1 {
     margin-bottom:200px;
     margin-top: 200px;
   }
+  .carousel{
+    padding:5rem 0.2rem;
+  }
+  .service{
+    font-size: 2rem;
+    padding-top: 0.5rem;
+  }
+  .navBack{
+    overflow: hidden;
+    background-position: left;
+  }
 }
